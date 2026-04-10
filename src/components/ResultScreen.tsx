@@ -24,7 +24,9 @@ export default function ResultScreen({ answers, shuffledQuestions, onRestart, on
   );
 
   const type = result.finalType;
-  const imageSrc = TYPE_IMAGES[type.code];
+  const imageSrc = TYPE_IMAGES[type.code]
+    ? `${process.env.NEXT_PUBLIC_BASE_PATH ?? ''}${TYPE_IMAGES[type.code]}`
+    : null;
 
   const funNote = result.special
     ? '本测试仅供娱乐。隐藏人格和傻乐兜底都属于作者故意埋的损招，请勿把它当成医学、心理学、相学、命理学或灵异学依据。'
