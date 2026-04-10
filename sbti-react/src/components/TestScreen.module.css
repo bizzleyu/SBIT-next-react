@@ -1,0 +1,70 @@
+.testWrap {
+  margin-top: 22px;
+  padding: 22px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+
+.progress {
+  flex: 1;
+  min-width: 240px;
+  height: 10px;
+  background: #f0e6d8;
+  border-radius: 999px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress > span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, #e0a06a, #a85e22);
+  border-radius: inherit;
+  transition: width 0.22s ease;
+}
+
+.progressText {
+  color: var(--muted);
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.questionList {
+  display: grid;
+  gap: 16px;
+}
+
+.actionsBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+  padding-top: 6px;
+}
+
+.hint {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.btnGroup {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+  .testWrap {
+    padding: 16px;
+  }
+}

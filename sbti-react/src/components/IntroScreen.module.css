@@ -1,0 +1,44 @@
+.heroMinimal {
+  min-height: 48vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 42px 20px;
+  margin-top: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.heroMinimal h1 {
+  font-size: clamp(28px, 5vw, 52px);
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+}
+
+.heroActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.heroActionsSingle {
+  justify-content: center;
+  margin-top: 28px;
+}
+
+.credits {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.credits a {
+  color: var(--accent-strong);
+  text-decoration: underline;
+}
