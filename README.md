@@ -2,7 +2,6 @@
 
 MBTI 已经过时，SBTI 来了。
 
-原作：B站 [@蛆肉儿串儿](https://space.bilibili.com/417038183)
 
 ## 技术栈
 
